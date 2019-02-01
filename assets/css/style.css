@@ -14,4 +14,49 @@ html {
 
 .row {
     max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 17px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.btn-main {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.btn-sec {
+    border: 1px solid #e67e22;
+    color: #e67e22;
 }

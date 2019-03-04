@@ -166,7 +166,7 @@ a:active {
 /* ---------------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/test-header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -222,7 +222,8 @@ header {
 /* ---------------------------------------------------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
@@ -233,7 +234,8 @@ header {
 }
 
 .btn-main:link,
-.btn-main:visited {
+.btn-main:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -247,7 +249,9 @@ header {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #b05d14;
 }
 
@@ -432,11 +436,23 @@ blockquote:before {
     border-radius: 7px;
     width: 90%;
     margin-left: 5%;
+    box-shadow: 0 2px 2px #b9b9b9;
 }
 
 .plan-box div {
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
 }
 
 .plan-price {
@@ -461,4 +477,35 @@ blockquote:before {
 
 .plan-box ul li {
     padding: 5px 0;
+}
+
+/* ----------------------------------------------- */
+/* FORMS */
+/* ----------------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
 }

@@ -2,6 +2,16 @@
 Color Palette: #e67e22
 */
 
+/* NOTES:
+
+-Use background-attachment: fixed to keep background image still while you scroll
+-While using background image in sections, you should use background-size: cover
+-It is usually a good idea to add line-height to text on the page.
+-When using absolute positioning, you need to remember to have relative positioning on the parent div.
+This way the absolute positoning know where to start
+
+*/
+
 /* ---------------------------------------------------- */
 /* BASIC SETUP */
 /* ---------------------------------------------------- */
@@ -160,6 +170,7 @@ header {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .banner-text-box {
@@ -362,4 +373,92 @@ header {
 
 .city-features {
     margin-bottom: 5px;
+}
+
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+
+    /*Covering the image over the entire section is usually what we want to do!!*/
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+}
+
+/* ----------------------------------------------- */
+/* PLANS */
+/* ----------------------------------------------- */
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 7px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 50%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
 }

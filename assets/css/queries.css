@@ -63,12 +63,17 @@ Some things I learned:
     /* CONTACT SECTION */
     .contact-form { width: 80%; }
     .footer-nav { font-size: 96%; }
+
+    .contact-form { width: 80%; }
 }
 
-/*Small phones to small tablets*/
+/*Small phones to small tablets 481px to 767px*/
 @media only screen and (max-width: 767px) {
     body { font-size: 16px; }
+    padding { padding: 30px 0; }
     
+    .row,
+    .hero-text-box { padding: 0 4%; }
 }
 
 /*Small phones from 0 to 480px*/

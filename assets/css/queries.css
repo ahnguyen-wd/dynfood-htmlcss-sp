@@ -1,0 +1,77 @@
+/*
+
+The general format for responsive media
+
+Small phones from 0 to 480px:
+@media only screen and (max-width: 480px)
+
+Small phones to small tablets (481px to 767px):
+@media only screen and (max-width: 767px)
+
+Small tablets to big tablets (768px to 1023px)
+@media only screen and (max-width: 1023px)
+
+Big tablets to 1200px (1024 to 1200px)
+@media only screen and (max-width: 1200px)
+
+Some things I learned:
+
+1. Make font smaller as resolution goes down
+2. Remove/reduce margin or padding as needed
+3. Increase image size as needed
+4. Hide overflow 
+
+*/
+
+/*Small tablets to big tablets */
+@media only screen and (max-width: 1200px) {
+    .row { padding: 0 2%; }
+    .banner-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+/*Small tablets to big tablets 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    .step-box { margin-top: 10px; }
+    .step-box:last-child { margin-top: 10px; }
+    .works-step { margin-bottom: 40px; }
+    .works-box:last-of-type { margin-bottom: 60px; }
+    .app-screen { width: 50%; }
+    
+    /* CITY SECTION */
+    .city-features { font-size: 80%; }
+    .icon-small { 
+        width: 17px;
+        margin-right: 5px;
+    }    
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    /* PLAN SECTION */
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan-price { font-size: 230%; }
+    
+    /* CONTACT SECTION */
+    .contact-form { width: 80%; }
+    .footer-nav { font-size: 96%; }
+}
+
+/*Small phones to small tablets*/
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    
+}
+
+/*Small phones from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+    
+}

@@ -133,14 +133,14 @@ Some things I learned:
 
     .contact-form { width: 100%; }
 
-    .section-steps h2 {
-        font-size: 25px;
-    }
-
     .city-features:last-child { margin-bottom: 20px; }
+
+    section { padding: 30px 0; }
 }
 
 /*Small phones from 0 to 480px*/
 @media only screen and (max-width: 480px) {
+    h1,
+    h2 { font-size: 130%; }
     
 }

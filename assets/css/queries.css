@@ -137,9 +137,9 @@ Some things I learned:
 
     section { padding: 30px 0; }
 
-    header { background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner-mbl.jpg); }
+    header { background-image: url(img/banner-mbl.jpg); }
 
-    .section-testimonials { background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg); }
+    .section-testimonials { background-image: url(img/back-customers.jpg); }
 }
 
 /*Small phones from 0 to 480px*/

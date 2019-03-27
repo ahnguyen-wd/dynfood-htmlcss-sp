@@ -74,6 +74,70 @@ Some things I learned:
     
     .row,
     .hero-text-box { padding: 0 4%; }
+    .col {
+        width: 100%;
+        margin: 0 0 2% 0;
+    }
+
+    .main-nav { display: none; }
+
+    .section-features .row .col{
+        width: 100%;
+        display: block;
+    }
+
+    .long-copy {
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 { font-size: 180%; }
+    h2 { font-size: 180%; }
+
+    .section-cities .col {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        font-size: 22px;
+    }
+
+    .works-step {
+        margin-bottom: 20px;
+    }
+    .works-step:last-of-type { margin-bottom: 20px; }
+
+    .steps-box:first-child {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .app-screen { width: 40% }
+
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        margin-right: 15px;
+        font-size: 120%;
+    }
+
+    .steps-box:last-child {
+        margin-top: 20px;
+        padding-left: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .contact-form { width: 100%; }
+
+    .section-steps h2 {
+        font-size: 25px;
+    }
+
+    .city-features:last-child { margin-bottom: 20px; }
 }
 
 /*Small phones from 0 to 480px*/

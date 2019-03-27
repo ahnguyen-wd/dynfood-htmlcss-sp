@@ -136,10 +136,6 @@ Some things I learned:
     .city-features:last-child { margin-bottom: 20px; }
 
     section { padding: 30px 0; }
-
-    header { background-image: url(img/banner-mbl.jpg); }
-
-    .section-testimonials { background-image: url(img/back-customers.jpg); }
 }
 
 /*Small phones from 0 to 480px*/
